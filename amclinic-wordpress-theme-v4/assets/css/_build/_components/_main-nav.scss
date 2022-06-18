@@ -1,0 +1,7 @@
+.menu-item-dropdown {
+  &:hover {
+    > a {
+     color: #fcede3 !important;
+    }
+  }
+}

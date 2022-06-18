@@ -1,0 +1,157 @@
+/**
+ * Colors
+ */
+
+// sass maps http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
+$grays: (
+		black-pearl : #020F14,
+		outer-space : #353B3D,
+		dusty-gray : #A69B9A,
+		oslo-gray : #868F92,
+		tiara : #C9D3D6,
+		mischka : #D4D4DA,
+		athens-gray : #EAEAEC,
+		white : #FFFFFF
+);
+
+$colors: (
+		am-blue : #292353,
+		daintree : #002B3B,
+		cyprus : #003B49,
+		blue-chill : #127B9E,
+		matisse : #1680A1,
+		jelly-bean : #2988A7,
+		ball-blue : #31A8C2,
+		am-orange : #E45C25,
+		stiletto : #9D2B43,
+		salt-box : #5F4D64,
+		del-rio : #AE8F8F,
+		undrab : #F0F0F0,
+		green-tick : #9ACD32,
+		clinic-green : #EAF4EF,
+		peppermint-green : #D0E9DE,
+);
+
+
+$lighten: #52D7E9;
+$darken: map-get($colors, cyprus);
+
+// https://brandcolors.net/
+$social-colors: (
+		facebook : #3B5998,
+		twitter : #55ACEE,
+		google-plus : #DD4B39,
+		linkedin : #007BB5,
+		youtube : #BB0000
+);
+
+$body-bg: map-get($colors, clinic-green);
+$text-color: map-get($grays, outer-space);
+$text-muted: map-get($grays, dusty-gray);
+$headings-color: map-get($colors, daintree);
+$link-color: map-get($colors, ball-blue);
+$link-hover-color: darken($link-color, 15%);
+
+/**
+ * Typography
+ */
+
+$font-family-sans: 'haboro_sansnorm_regular', sans-serif;
+$font-family-sans-bold: 'haboro_sansnorm_demi', sans-serif;
+$font-family-serif: 'cabrito_semi_cond_demconddemi', serif;
+$font-family-mono: Consolas, monaco, monospace;
+
+$font-family-primary: $font-family-sans;
+$font-family-headings: $font-family-serif;
+$font-family-code: $font-family-mono;
+
+$font-weight-body: 400;
+$font-weight-headings: 400;
+
+$line-height-default: 1.5;
+
+$body-font-sizes: (
+		null : 100%,
+		small : 118.8%,
+		medium : 131.3%,
+		large : 143.8%,
+);
+
+$font-size-small: 0.85em;
+$font-size-large: 1.125em;
+
+$h1-font-sizes: (
+		null : (2.5em, 1.1)
+);
+
+$h2-font-sizes: (
+		null : (2em, 1.1)
+);
+
+$h3-font-sizes: (
+		null : (1.625em, 1.1)
+);
+
+$h4-font-sizes: (
+		null : (1.45em, 1.1)
+);
+
+$h5-font-sizes: (
+		null : (1.325em, 1.1)
+);
+
+$h6-font-sizes: (
+		null : (1.125em, 1.1)
+);
+
+/**
+ * Box Shadows
+ */
+
+$box-shadow-small: 5px;
+$box-shadow-medium: 10px;
+$box-shadow-large: 15px;
+
+$box-shadow-light: rgba(25, 25, 25, 0.1);
+$box-shadow-normal: rgba(25, 25, 25, 0.25);
+$box-shadow-dark: rgba(25, 25, 25, 0.5);
+
+/**
+ * Animations & Transitions
+ */
+
+$btn-transistion-time: 300ms;
+$link-transistion-time: 200ms;
+
+/**
+ * Grid, Containers & Breakpoints
+ */
+
+$base-container-width: 90%;
+
+$susy: (
+		global-box-sizing: border-box,
+		use-custom: (
+				clearfix: true
+		)
+);
+
+// $breakpoints and $containers maps MUST contain same keys
+// large = max container width at medium / 16 * $body-font-sizes, large ;)
+$containers: (
+		x-small : 90%,
+		small : 90%,
+		medium : 90%,
+		large : 1150px
+);
+
+// $breakpoints and $containers maps MUST contain same keys
+$breakpoints: (
+		x-small : 420px,
+		small : 768px,
+		medium : 992px,
+		large : 1200px
+);
+
+// When the menu collapses
+$menu-collapse: 830px;

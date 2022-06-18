@@ -1,0 +1,15 @@
+.menu-item-dropdown {
+    &:hover {
+      > a {
+       color: #fcede3 !important;
+      }
+    }
+  }
+  .treatment-list__heading {
+      &:hover {
+          a {
+              color: black !important;
+              background: #282451 !important;
+          }
+      }
+  }

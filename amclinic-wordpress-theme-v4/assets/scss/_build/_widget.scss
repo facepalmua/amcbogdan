@@ -1,0 +1,130 @@
+.widget {
+  &--service-location {
+    a {
+      display: block;
+      padding-top: 5px;
+    }
+  }
+}
+
+.location-icon {
+  width: 27px;
+  margin-right: 5px;
+}
+.widget--service-location {
+  .location-link {
+    font-size: 19px  !important;
+  }
+}
+
+.widget--service-location {
+  p {
+    font-size: 21px !important;
+  }
+
+  a {
+    font-size: 21px !important;
+  }
+}
+
+.mjm_clinic_service_locations_widget_output_location-name {
+  font-size: 22px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+// Conditions list with categories and posts
+.mjm_clinic_shortcode_condition_list_name {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #151751;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: -5px !important;
+  padding: 4px 0px !important;
+
+  &:before {
+    content: '';
+    background: url('../images/widgets-icons/info-icon-blue.svg');
+    background-size: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 22px;
+    border-right: 0.5px solid #292353;
+    margin-right: 10px;
+  }
+}
+
+.am-menu-scroll__title {
+  color: #292353;
+  font-size: 23px !important;
+  font-weight: 700;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.btn-icon {
+  &.free-health-guides__widget {
+    padding: 7px 5px 7px 9px;
+
+    .icon {
+      min-width: 50px;
+      position: relative;
+      border-radius: 5px;
+
+      svg {
+        width: 28px;
+        height: 50px;
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+      }
+    }
+
+    br {
+      display: none;
+    }
+
+    .text {
+      font-size: 17px;
+      padding: 3px 15px;
+      border: none;
+    }
+  }
+}
+
+.subnav-widget__styles {
+  .am_menu_list--icons {
+    a {
+      padding: 7px !important;
+      margin-bottom: -4px;
+    }
+  }
+}
+
+.mjm_clinic_widget_container_indication_tags {
+  .mjm_clinic_indication_tags_widget_output_entry-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .mjm_clinic_indication_tags_widget_output_link {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.mjm_clinic_widget_container_related_conditions {
+  .mjm_clinic_related_conditions_widget_output_entry-container {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,7 @@
+.pdf-container{
+	height: 750px;
+
+	@media (max-width: 992px ) {
+		height: 400px;
+	}
+}
