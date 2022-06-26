@@ -19,7 +19,7 @@ var gulp = require('gulp');
 // Local Server
 gulp.task('browser-sync', function () {
   browserSync({
-    proxy: 'http://localhost:8188/',
+    proxy: 'http://project/',
     notify: false,
     // open: false,
     // online: false, // Work Offline Without Internet Connection

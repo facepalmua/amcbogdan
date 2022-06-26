@@ -49,7 +49,7 @@
   .owl-carousel .owl-item img {
     display: block;
     width: 100%; }
-  .owl-carousel .owl-nav.disabled,
+  .owl-carousel,
   .owl-carousel .owl-dots.disabled {
     display: none; }
   .owl-carousel .owl-nav .owl-prev,
@@ -65,10 +65,11 @@
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
     background: none;
-    color: inherit;
+    color: #4ec14c;
     border: none;
     padding: 0 !important;
-    font: inherit; }
+    font: inherit;
+    font-size: 45px; }
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {

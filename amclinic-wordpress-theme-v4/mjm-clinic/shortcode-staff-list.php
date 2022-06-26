@@ -20,7 +20,7 @@
                 <?php echo $post->post_excerpt ?>
             </p>
             <div class="post-more">
-                <a href="<?php echo  get_permalink($post->ID) ?>">more &gg;</a>
+                <a href="<?php echo  get_permalink($post->ID) ?>"><span></span></a>
             </div>
 
         </div>

@@ -47,6 +47,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     items: 1,
     dotsContainer: '.carousel-custom-dots',
+    navText: ["<span class=prev-span> 🠀 </span>", "<span class=next-span> 🠂 </span>"],
     // autoplay: true,
     // autoPlaySpeed: 5000,
     // autoPlayTimeout: 5000,

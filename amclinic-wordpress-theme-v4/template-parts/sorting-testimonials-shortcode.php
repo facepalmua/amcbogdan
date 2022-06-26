@@ -8,7 +8,10 @@ $output = '<div id="users">
             </div>
             <div class="search-breadcrumbs__wrapper">
             <p>Can’t find what your looking for? Ask us!</p> 
+            <div class="btn-block-contact">
+            <span>▸</span>
             <a href="'.get_the_permalink(132).'">Contact Us</a>
+            </div>
             </div>
             <ul class="list">';
 $posts = get_posts(

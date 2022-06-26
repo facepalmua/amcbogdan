@@ -44,7 +44,7 @@ get_header(); ?>
                                     <?php the_excerpt(); ?>
                                 </p>
                                 <div class="post-more">
-                                    <a href="<?php get_the_permalink(the_ID()); ?>">more &gg;</a>
+                                    <a href="<?php get_the_permalink(the_ID()); ?>"><span></span></a>
                                 </div>
 
                             </div>
