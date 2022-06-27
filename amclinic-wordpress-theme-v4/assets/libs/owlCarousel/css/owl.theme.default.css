@@ -11,10 +11,8 @@
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  right: 10.6%;
-  bottom: -1%;
-  display: flex;
-  gap: 16px; }
+  right: 10.1%;
+  bottom: -1%; }
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;

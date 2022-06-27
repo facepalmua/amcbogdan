@@ -33,6 +33,10 @@ if (!$slider_images) {
 			<li class='owl-dot'></li>
 		<?php } ?>
 	</ul>
+	<div class="slider_nav">
+		<button class="am-next"><img src="http://project/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/left-arrow.png" alt=""></button>
+		<button class="am-prev"><img src="http://project/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/right-arrow.png" alt=""></button>
+	</div>
 </div>
 <?php } else { ?>
 	<div class="carousel-wrapper">

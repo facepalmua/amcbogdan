@@ -88,6 +88,11 @@
                     background-image: url('../images/widgets-icons/sub-nav-icon-1.png');
 
                 }
+                &:hover {
+                    &::before {
+                        background-image: url('../images/widgets-icons/sub-nav-icon-1-hover.png');
+                    }
+                }
             }
         }
 
@@ -96,6 +101,11 @@
                 &::before {
                     background-image: url('../images/widgets-icons/sub-nav-icon-1.png');
 
+                }
+                &:hover {
+                    &::before {
+                        background-image: url('../images/widgets-icons/sub-nav-icon-1-hover.png');
+                    }
                 }
             }
         }
@@ -106,6 +116,11 @@
                     background-image: url('../images/widgets-icons/sub-nav-icon-2.png');
                     background-size: 16px;
                 }
+                &:hover {
+                    &::before {
+                        background-image: url('../images/widgets-icons/sub-nav-icon-2-hover.png');
+                    }
+                }
             }
         }
 
@@ -115,6 +130,11 @@
                     background-image: url('../images/widgets-icons/sub-nav-icon-3.png');
                     background-size: 16px;
                 }
+                &:hover {
+                    &::before {
+                        background-image: url('../images/widgets-icons/sub-nav-icon-3-hover.png');
+                    }
+                }
             }
         }
 
@@ -123,6 +143,11 @@
                 &::before {
                     background-image: url('../images/widgets-icons/sub-nav-icon-4.png');
 
+                }
+                &:hover {
+                    &::before {
+                        background-image: url('../images/widgets-icons/sub-nav-icon-4-hover.png');
+                    }
                 }
             }
 
@@ -141,13 +166,16 @@
 
         &:hover {
             background: #151751;
-            color: #fff !important;
+            color: #fafafb !important;
             text-decoration: none;
+            &::before {
+                border-right: 1px solid #dadae3;
+            }
         }
 
         &::before {
             content: '';
-            width: 39px;
+            width: 32px;
             background-size: 10px;
             height: 20px;
             background-repeat: no-repeat;
@@ -156,6 +184,7 @@
             padding-right: 8px;
             border-right: 1px solid black;
             margin-right: 8px;
+            margin-left: -5px;
         }
 
 

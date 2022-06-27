@@ -47,17 +47,12 @@ jQuery(document).ready(function ($) {
     dots: true,
     items: 1,
     dotsContainer: '.carousel-custom-dots',
-    navText: ["<img src=/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/left-arrow.png alt=>", "<img src=/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/right-arrow.png alt=>"],
+    navText: [$('.am-next'),$('.am-prev')],
     // autoplay: true,
     // autoPlaySpeed: 5000,
     // autoPlayTimeout: 5000,
     // autoplayHoverPause: true,
   });
-  $(".owl-carousel").owlCarousel({
-    // you can use jQuery selector
-    navText: [$('.am-next'),$('.am-prev')]
- 
-});
 console.log('cache cleared')
 
   $('.owl-dot').click(function () {

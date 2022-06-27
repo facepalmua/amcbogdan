@@ -70,8 +70,12 @@
     font: inherit;
     font-size: 45px;
     }
-    img {
-      width: 30px;
+    .am-next, .am-prev {
+      border: none;
+      background: transparent;
+    }
+    .am-next img, .am-prev img {
+      width: 33px;
     }
   .owl-carousel.owl-loaded {
     display: block; }
