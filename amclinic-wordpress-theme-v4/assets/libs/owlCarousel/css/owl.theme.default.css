@@ -12,7 +12,9 @@
   -webkit-tap-highlight-color: transparent;
   position: absolute;
   right: 10.1%;
-  bottom: -1%; }
+  bottom: -1%;
+  display: flex;
+  gap: 29px;}
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;

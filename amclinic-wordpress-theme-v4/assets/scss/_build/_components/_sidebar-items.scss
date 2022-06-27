@@ -86,7 +86,6 @@
             a {
                 &::before {
                     background-image: url('../images/widgets-icons/sub-nav-icon-1.png');
-
                 }
                 &:hover {
                     &::before {
@@ -175,7 +174,7 @@
 
         &::before {
             content: '';
-            width: 32px;
+            min-width: 32px;
             background-size: 10px;
             height: 20px;
             background-repeat: no-repeat;

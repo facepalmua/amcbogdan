@@ -1289,6 +1289,7 @@ h6 {
     grid-template-columns: 1fr 2fr;
     border-radius: 10px;
     overflow: hidden;
+    transform: translateZ(0);
 
     @media (max-width: 540px) {
       grid-template-columns: 1fr;
@@ -3109,6 +3110,7 @@ section.white-stripe {
 
   .feature-posts .post {
     grid-template-columns: 1fr 3fr;
+    transform: translateZ(0);
   }
 
   .post-body {
@@ -3128,6 +3130,7 @@ section.white-stripe {
   }
   .lead {
     font-size: 30px !important;
+    margin-bottom: 20px;
   }
 }
 //End of FAQ page

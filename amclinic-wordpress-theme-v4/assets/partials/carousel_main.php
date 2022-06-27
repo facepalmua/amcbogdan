@@ -34,8 +34,8 @@ if (!$slider_images) {
 		<?php } ?>
 	</ul>
 	<div class="slider_nav">
-		<button class="am-next"><img src="/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/left-arrow.png" alt=""></button>
-		<button class="am-prev"><img src="/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/right-arrow.png" alt=""></button>
+		<img class="am-next" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/left-arrow.png" alt=""></button>
+		<img class="am-prev" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/right-arrow.png" alt=""></button>
 	</div>
 </div>
 <?php } else { ?>
