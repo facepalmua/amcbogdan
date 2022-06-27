@@ -38,7 +38,24 @@ if (!$slider_images) {
 		<img class="am-prev" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/right-arrow.png" alt=""></button>
 	</div>
 </div>
-<?php } else { ?>
+<?php } elseif(is_page(273)) { ?>
+	<div class="carousel-wrapper">
+	<section class="hero-carousel owl-carousel owl-theme">
+		<?php
+		$count = 1;
+		$reveal_placeholder = am_get_asset_img('trans_pixel.png');
+		?>
+			<div class="item">
+				<div class="hero-carousel__item remove-bg-offset" style="background-image: url('<?php echo get_the_post_thumbnail_url(273, 'full') ?>')">
+				<img src="<?php echo get_the_post_thumbnail_url(273, 'full') ?>" alt="<?php the_title() ?>" class="slider-mobile-image__single">
+				</div>
+			</div>
+		<?php   ?>
+	</section>
+</div>
+<?php }
+
+ else { ?>
 	<div class="carousel-wrapper">
 	<section class="hero-carousel owl-carousel owl-theme">
 		<?php
