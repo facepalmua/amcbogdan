@@ -6,14 +6,14 @@ get_header();?>
 <section id="content">
     <div class="container">
         <div class="row contact-row form__contact-info">
-            <div class="col-sm-6">
+            <div class="col-sm-6 pb-8">
             <div class="breadcrumbs">
 					<nav role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
 						<ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList">
 							<meta name="numberOfItems" content="1">
 							<meta name="itemListOrder" content="Ascending">
 							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end">
-								<a href="//localhost:3000/contact/">
+								<a href="<?php echo home_url('/contact/') ?>">
 									<span itemprop="name">Contact Us</span>
 								</a>
 								<meta itemprop="position" content="1">

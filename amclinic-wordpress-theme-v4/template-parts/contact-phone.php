@@ -2,7 +2,7 @@
     <div class="mjmclinic-widget widget--service-location widget--service-location__shortcode">
         <a href="tel:+44(0)20 7388 6704">
             <img class="location-icon" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/widgets-icons/phone-icon.svg" alt="phone icon"> +44(0)20 7388 6704 </a>
-        <a href="//localhost:3000/contact/">
+            <a href="<?php echo home_url('/contact/') ?>">
             <img class="location-icon" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/widgets-icons/email-icon.svg" alt="email icon"> Contact Us
         </a>
     </div>

@@ -47,13 +47,12 @@ jQuery(document).ready(function ($) {
     dots: true,
     items: 1,
     dotsContainer: '.carousel-custom-dots',
-    navText: [$('.am-next'),$('.am-prev')],
+    navText: [$('.am-next'), $('.am-prev')],
     // autoplay: true,
     // autoPlaySpeed: 5000,
     // autoPlayTimeout: 5000,
     // autoplayHoverPause: true,
   });
-console.log('cache cleared')
 
   $('.owl-dot').click(function () {
     owl.owlCarousel().trigger('to.owl.carousel', [$(this).index(), 300]);

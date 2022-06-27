@@ -17,7 +17,7 @@
 			</h3>
 
 			<p>
-				<?php echo mb_strimwidth($post->post_excerpt, 0, 80, '') . '...'?>
+				<?php echo mb_strimwidth($post->post_excerpt, 0, 95, '') . '...'?>
 			</p>
 
 			<div class="post-more">

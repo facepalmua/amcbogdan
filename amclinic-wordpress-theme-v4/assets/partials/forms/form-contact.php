@@ -18,7 +18,7 @@
 							<meta name="numberOfItems" content="1">
 							<meta name="itemListOrder" content="Ascending">
 							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end">
-								<a href="//localhost:3000/contact/">
+							<a href="<?php echo home_url('/contact/') ?>">
 									<span itemprop="name">Contact Us</span>
 								</a>
 								<meta itemprop="position" content="1">

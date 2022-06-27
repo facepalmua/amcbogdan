@@ -3344,10 +3344,17 @@ section.white-stripe {
     right: 14%;
   }
 }
+#footer-logo-cmir {
+  min-width: auto !important;
+}
 
+.pb-8 {
+  padding-bottom: 34px;
+}
 
 
 @import '../scss/_build/_components/_faq.scss';
+@import '../scss/_build/rangeslider';
 @import '../scss/_build/_components/_main-nav.scss';
 // @import '../scss/_build/_components/_forms.scss';
 @import '../scss/_build/_components/_sidebar-items.scss';
