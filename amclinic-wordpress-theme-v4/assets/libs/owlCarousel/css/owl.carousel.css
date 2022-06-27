@@ -65,11 +65,14 @@
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
     background: none;
-    color: #4ec14c;
     border: none;
     padding: 0 !important;
     font: inherit;
-    font-size: 45px; }
+    font-size: 45px;
+    }
+    img {
+      width: 30px;
+    }
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {

@@ -204,7 +204,7 @@ $amount = $atts['amount']
 <div class="prices__wrapper last-prices__wrapper">
     <div class="price__item">
         <p class="price-title white">
-            <img src="/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/header-logo-cropped.png" alt="">
+            <img src="/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/header-logo-cropped.jpg" alt="">
             VALUE PACKAGES
         </p>
 
