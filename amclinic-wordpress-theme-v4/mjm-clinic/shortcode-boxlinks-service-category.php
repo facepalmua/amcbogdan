@@ -16,7 +16,7 @@
 			</h3>
 
 			<p>
-				<?php echo  $category_meta['excerpt'] ?>
+				<?php echo  $category_meta['excerpt']?>
 			</p>
 			<div class="post-more">
 				<a href="<?php echo get_term_link($category) ?>"><span></span></a>

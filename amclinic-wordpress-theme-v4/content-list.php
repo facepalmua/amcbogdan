@@ -17,7 +17,7 @@
             </h3>
 
             <p>
-                <?php echo $post->post_excerpt ?>
+                <?php echo $post->post_excerpt?>
             </p>
             
             <div class="post-more">
