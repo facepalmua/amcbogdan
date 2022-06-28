@@ -784,17 +784,16 @@ h6 {
 
     @media (max-width: 1400px) {
       right: 11%;
-      bottom: 28%;
+      bottom: 18%;
     }
 
     @media (max-width: 1200px) {
-      right: 134px;
-      bottom: 30%;
+      right: 139px;
+      bottom: 7%;
     }
 
     @media (max-width: 1000px) {
       right: 13%;
-      bottom: 30%;
     }
 
     @media (max-width: 920px) {
@@ -3396,7 +3395,6 @@ section.white-stripe {
 }
 
 .mjm_clinic_assigned_services_widget_output_entry-container a:hover::before {
-  border-right: 1px solid #dadae3;
   background-image: url('/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/widgets-icons/plus-hover.png');
 }
 
@@ -3410,9 +3408,21 @@ section.white-stripe {
   background-position: center center;
   display: block;
   padding-right: 8px;
-  border-right: 1px solid #000;
   margin-right: 8px;
   margin-left: -5px;
+}
+
+.mjm_clinic_assigned_services_widget_output_entry-container a::after {
+  content: "";
+  background-image: url('/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/line.png');
+  min-height: 63%;
+  min-width: 16px;
+  left: 4%;
+  position: absolute
+}
+
+.mjm_clinic_assigned_services_widget_output_entry-container a:hover::after {
+  background-image: url('/wp-content/themes/amclinic-wordpress-theme-v4/assets/images/line-hover.png');
 }
 
 @import '../scss/_build/_components/_faq.scss';
