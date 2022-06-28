@@ -20,6 +20,7 @@ foreach ($service_cats as $cat) {
 			foreach ($cat_services as $service) {
 				$services[$service->ID] = array(
 					'name' => $service->post_title,
+					'price' => get_post_meta($service->ID, 'session_info')
 				);
 			}
 		}
@@ -40,10 +41,8 @@ foreach ($service_cats as $cat) {
 		const currentLinks = document.querySelectorAll('.nav-link');
 		const currentLocation = window.location.href;
 		for (i = 0; i < currentLinks.length; i++) {
-			console.log('testing')
 			let linkLocation = currentLinks[i].getAttribute("href");
 			if (linkLocation === currentLocation) {
-				console.log(currentLinks[i])
 				currentLinks[i].classList.add('active')
 			} else {
 				currentLinks[i].classList.remove('active')
@@ -62,7 +61,7 @@ foreach ($service_cats as $cat) {
 							<meta name="numberOfItems" content="1">
 							<meta name="itemListOrder" content="Ascending">
 							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end">
-							<a href="<?php echo home_url('/contact/') ?>">
+								<a href="<?php echo home_url('/contact/') ?>">
 									<span itemprop="name">Contact Us</span>
 								</a>
 								<meta itemprop="position" content="1">

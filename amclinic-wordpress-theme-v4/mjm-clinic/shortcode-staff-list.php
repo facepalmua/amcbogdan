@@ -1,9 +1,8 @@
 <div class="feature-posts">
     <div class="post clickable">
-
         <a class="post-image" href="<?php echo  get_permalink($post->ID) ?>">
-            <?php if($image): ?>
-                <img src="<?php echo  $image_url ?>" alt="Image: <?php echo $post->post_title ?>">
+            <?php if ($image) : ?>
+                <img src="<?php echo  get_the_post_thumbnail_url($post->ID, 'full') ?>" alt="Image: <?php echo $post->post_title ?>">
             <?php endif; ?>
         </a>
 
@@ -12,12 +11,12 @@
 
             <h3>
                 <a href="<?php echo  get_permalink($post->ID) ?>">
-                    <?php echo  esc_html(ucwords(strtolower($post->post_title)))?>
+                    <?php echo  esc_html(ucwords(strtolower($post->post_title))) ?>
                 </a>
             </h3>
 
             <p>
-                <?php echo $post->post_excerpt ?>
+                <?php echo $post->post_excerpt . '...' ?>
             </p>
             <div class="post-more">
                 <a href="<?php echo  get_permalink($post->ID) ?>"><span></span></a>

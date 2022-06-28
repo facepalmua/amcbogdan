@@ -3370,7 +3370,13 @@ section.white-stripe {
   padding-bottom: 34px;
 }
 
+#navbar {
+  padding: 0;
+}
 
+.mjm_clinic_assigned_services_widget_output_entry-container .fa-plus-square {
+  display: none;
+}
 .mjm_clinic_assigned_services_widget_output_entry-container a {
   color: #000;
   border: 0.5px solid #000 !important;
