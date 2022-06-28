@@ -782,14 +782,19 @@ h6 {
       right: 11%;
     }
 
+    @media (max-width: 1400px) {
+      right: 11%;
+      bottom: 28%;
+    }
+
     @media (max-width: 1200px) {
       right: 134px;
-      bottom: 12%;
+      bottom: 30%;
     }
 
     @media (max-width: 1000px) {
       right: 13%;
-      bottom: 12%;
+      bottom: 30%;
     }
 
     @media (max-width: 920px) {
@@ -828,7 +833,8 @@ h6 {
 }
 .owl-theme .owl-nav {
   @media (max-width: 1492px) {
-    right: 9.25% !important;
+    right: 9.7% !important;
+    bottom: -8% !important;
   }
 
   @media (max-width: 1200px) {
@@ -837,7 +843,7 @@ h6 {
   }
 
   @media (max-width: 1024px) {
-    right: 10.8% !important;
+    right: 11.3% !important;
   }
 
   @media (max-width: 920px) {
@@ -3323,13 +3329,20 @@ section.white-stripe {
 .owl-prev, .owl-next {
   @media (max-width: 920px) {
     position: absolute;
-    bottom: -5px;
+    bottom: -27px !important;
   }
 }
 
 .owl-prev {
+  @media (max-width: 1250px) {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+  }
   @media (max-width: 920px) {
-    left: 43%;
+    left: 33%;
+    right: auto;
+    bottom: -23px;
   }
   @media (max-width: 425px) {
     left: 36%;
@@ -3337,8 +3350,14 @@ section.white-stripe {
 }
 
 .owl-next {
+  @media (max-width: 1250px) {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
   @media (max-width: 920px) {
-    right: 22%;
+    right: 12% !important;
+    left: auto;
   }
   @media (max-width: 425px) {
     right: 14%;

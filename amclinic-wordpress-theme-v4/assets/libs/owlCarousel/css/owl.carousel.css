@@ -68,7 +68,8 @@
     border: none;
     padding: 0 !important;
     font: inherit;
-    font-size: 45px;
+    font-size: 80px;
+    color: #000;
     }
     .am-next, .am-prev {
       border: none;

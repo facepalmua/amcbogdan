@@ -14,7 +14,12 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="shortcut icon" href="<?php echo am_get_asset_img('favicon.ico'); ?>">
 	<link rel="apple-touch-icon" href="<?php echo am_get_asset_img('apple-touch-icon.png'); ?>">
+	<style>
+		.carousel-wrapper {
+			min-height: 395px;
+		}
 
+	</style>
     <!-- Globals -->
     <script>
         var amcGlobals = {

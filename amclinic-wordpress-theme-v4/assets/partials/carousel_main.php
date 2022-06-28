@@ -33,10 +33,6 @@ if (!$slider_images) {
 			<li class='owl-dot'></li>
 		<?php } ?>
 	</ul>
-	<div class="slider_nav">
-		<img class="am-next" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/left-arrow.png" alt=""></button>
-		<img class="am-prev" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/right-arrow.png" alt=""></button>
-	</div>
 </div>
 <?php } elseif(is_page(273)) { ?>
 	<div class="carousel-wrapper">

@@ -47,12 +47,22 @@ jQuery(document).ready(function ($) {
     dots: true,
     items: 1,
     dotsContainer: '.carousel-custom-dots',
-    navText: [$('.am-next'), $('.am-prev')],
+    // navText: [$('.am-next'), $('.am-prev')],
     // autoplay: true,
     // autoPlaySpeed: 5000,
     // autoPlayTimeout: 5000,
     // autoplayHoverPause: true,
   });
+
+  $('.am-next').click(function() {
+    owl.trigger('next.owl.carousel');
+  })
+  // Go to the previous item
+  $('.am-prev').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl.trigger('prev.owl.carousel', [300]);
+  })
 
   $('.owl-dot').click(function () {
     owl.owlCarousel().trigger('to.owl.carousel', [$(this).index(), 300]);
