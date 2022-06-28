@@ -107,6 +107,10 @@ function am_filter_yoast_seo_metabox() {
 	return 'low';
 }
 
+
+/**
+ * Changed gallery output
+ */
 add_filter('post_gallery', 'my_post_gallery', 10, 2);
 function my_post_gallery($output, $attr) {
     global $post;
@@ -145,9 +149,8 @@ function my_post_gallery($output, $attr) {
 
     if (empty($attachments)) return '';
 
-    // Here's your actual output, you may customize it to your need
-    $output = "<div class=\"entry-content\">\n";
-    $output .= "<ul class=\"wp-block-gallery\">\n";
+    // Here's your actual output, you may customize it to your needs
+    $output = "<div class=\"owl-carousel owl-theme\">\n";
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
@@ -156,12 +159,11 @@ function my_post_gallery($output, $attr) {
 //      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
         $img = wp_get_attachment_image_src($id, 'full');
 
-        $output .= "<li>\n";
+        $output .= "<div class=\"item\">\n";
         $output .= "<img src=\"{$img[0]}\" width=\"{$img[1]}\" height=\"{$img[2]}\" alt=\"\" />\n";
-        $output .= "</li>\n";
+        $output .= "</div>\n";
     }
 
-    $output .= "</ul>\n";
     $output .= "</div>\n";
 
     return $output;

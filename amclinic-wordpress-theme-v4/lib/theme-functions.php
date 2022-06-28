@@ -153,14 +153,22 @@ function am_scripts()
 	}
 
 	if (is_front_page()) {
+			wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.carousel.js', array('jquery'), NULL, true);
+			wp_enqueue_script('owl-carousel-navigations', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.navigation.js', array('jquery'), NULL, true);
+			wp_enqueue_script('owl-carousel-autoplay', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.autoplay.js', array('jquery'), NULL, true);
+			wp_enqueue_style('owl-carousel-styles-default', get_template_directory_uri() . '/assets/libs/owlCarousel/css/owl.theme.default.css', array(), AMCLINIC_THEME_VERSION);
+			wp_enqueue_style('owl-carousel-styles', get_template_directory_uri() . '/assets/libs/owlCarousel/css/owl.carousel.css', array(), AMCLINIC_THEME_VERSION);
+
+		wp_enqueue_script('frontpage', get_template_directory_uri() . '/assets/js/frontpage.js', array('jquery'), NULL, true);
+	}
+// gallery page
+	if (is_page(273)) {
 		wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.carousel.js', array('jquery'), NULL, true);
 		wp_enqueue_script('owl-carousel-navigations', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.navigation.js', array('jquery'), NULL, true);
 		wp_enqueue_script('owl-carousel-autoplay', get_template_directory_uri() . '/assets/libs/owlCarousel/js/owl.autoplay.js', array('jquery'), NULL, true);
 		wp_enqueue_style('owl-carousel-styles-default', get_template_directory_uri() . '/assets/libs/owlCarousel/css/owl.theme.default.css', array(), AMCLINIC_THEME_VERSION);
 		wp_enqueue_style('owl-carousel-styles', get_template_directory_uri() . '/assets/libs/owlCarousel/css/owl.carousel.css', array(), AMCLINIC_THEME_VERSION);
-
-
-		wp_enqueue_script('frontpage', get_template_directory_uri() . '/assets/js/frontpage.js', array('jquery'), NULL, true);
+		wp_enqueue_script('default-gallery-owl', get_template_directory_uri() . '/assets/js/default-gallery-owl.js', array('jquery'), NULL, true);
 	}
 
 	//register scripts
@@ -235,25 +243,25 @@ function get_images_bycategory($term_slug)
 /*
  * Do not Allow Gallery in the_content
  */
-function strip_shortcode($code, $content)
-{
-	global $shortcode_tags;
+// function strip_shortcode($code, $content)
+// {
+// 	global $shortcode_tags;
 
-	$stack = $shortcode_tags;
-	$shortcode_tags = array($code => 1);
+// 	$stack = $shortcode_tags;
+// 	$shortcode_tags = array($code => 1);
 
-	$content = strip_shortcodes($content);
+// 	$content = strip_shortcodes($content);
 
-	$shortcode_tags = $stack;
-	return $content;
-}
+// 	$shortcode_tags = $stack;
+// 	return $content;
+// }
 
-function remove_gallery($content)
-{
-	return strip_shortcode('gallery', $content);
-}
+// function remove_gallery($content)
+// {
+// 	return strip_shortcode('gallery', $content);
+// }
 
-add_filter('the_content', 'remove_gallery', 6);
+// add_filter('the_content', 'remove_gallery', 6);
 
 
 

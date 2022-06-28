@@ -19,7 +19,6 @@ var booking_form = {
 
   loadEmbeddedData: function () {
     this.embeddedData = JSON.parse(document.getElementById('service_data').innerHTML);
-    console.log(this.embeddedData);
     return this.embeddedData;
   },
 
@@ -145,13 +144,13 @@ jQuery(document).ready(function ($) {
     let priceData =
       parsedJSON[currentTreatmentTypeValue]['services'][currentTrearmentValue]['price'];
     let html = $.parseHTML(priceData);
+    
     priceData = priceData
       .toString()
       .replace(/&lt;/g, '<')
       .replace(/&gt;/g, '>')
       .replace(/&quot;/g, '"');
-
-
+    
     $('.prices').html(priceData);
     if (priceData.length > 0) {
       $('.prices').addClass('active');
@@ -184,13 +183,11 @@ jQuery(document).ready(function ($) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const currentLinks = document.querySelectorAll('.nav-link');
-  console.log(currentLinks);
   const currentLocation = window.location.href;
   for (i = 0; i < currentLinks.length; i++) {
-    console.log('testing');
     let linkLocation = currentLinks[i].getAttribute('href');
     if (linkLocation === currentLocation) {
-      console.log(currentLinks[i]);
+  
       currentLinks[i].classList.add('active');
     } else {
       currentLinks[i].classList.remove('active');
