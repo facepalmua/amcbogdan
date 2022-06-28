@@ -7,44 +7,7 @@ get_header();?>
     <div class="container">
         <div class="row contact-row form__contact-info">
             <div class="col-sm-6 pb-8">
-            <div class="breadcrumbs">
-					<nav role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
-						<ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-							<meta name="numberOfItems" content="1">
-							<meta name="itemListOrder" content="Ascending">
-							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end">
-								<a href="<?php echo home_url('/contact/') ?>">
-									<span itemprop="name">Contact Us</span>
-								</a>
-								<meta itemprop="position" content="1">
-							</li>
-						</ul>
-					</nav>
-				</div>
-                <h1 class="entry-title">Contact Us</h1>
-                <ul>
-                    <li><strong>AcuMedic Clinic</strong></li>
-                    <li>101-105</li>
-                    <li>Camden High Street</li>
-                    <li>London</li>
-                    <li>NW| 7JN</li>
-                    <li><a href="">+44(0)20 7388 6704</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-                <hr>
-                <a class="contact-link" href="#">Acupuacture and Chinese Herbal Madicine</a>
-                <p class="date"><strong>Monday - Saturday 10:00 - 18:00</strong></p>
-                <p>(First appointment: 10:00, last appointment: 17:00)</p>
-                <hr>
-                <a class="contact-link" href="#">Telephone Consultations</a>
-                <p class="date"><strong>Monday - Saturday 10:00 - 17:00</strong></p>
-                <hr>
-                <a class="contact-link" href="#">Cancellation Policy</a>
-                <p>AcuMedic has a strict cancellation policy of 24 hours notise. There is a <br> late cancellation charge of £25 for any late cancellations or no-shows </p>
-                <hr>
-                <a class="contact-link" href="#">Public Transport</a>
-                <p class="transport-p">Nearest tube is Camden Town and Mornington Crescent. <br> We are approx. 5 min. walk from either Tube station.</p>
-                <p class="transport-p">Buses that stop nearby include 24, 27, 29, 31, 134, 168, 214, 253. <br> All stap within 2-5 min. walk to AcuMedic Centre.</p>
+            <?php the_content() ?>
             </div>
             <div class="col-sm-6">
 				<nav class="form-navigations">
