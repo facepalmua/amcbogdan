@@ -3475,6 +3475,12 @@ section.white-stripe {
   }
 }
 
+.form-col-custom-width {
+  .sidebar__additional-info {
+    display: none
+  }
+}
+
 @import '../scss/_build/_components/_faq.scss';
 @import '../scss/_build/rangeslider';
 @import '../scss/_build/_components/_main-nav.scss';
