@@ -1,94 +1,154 @@
 .entry-content {
-
-    [role=button] {
-        background: rgba(255, 255, 255, 0.5);
-        padding: 15px 10px;
-        border-radius: 40px;
-        display: block;
-        margin-bottom: 10px;
-        min-width: 80%;
-        max-width: 80%;
-        transition: .3s all;
-        color: #292353;
-        position: relative;
-        padding-left: 60px;
-        @media(max-width: 768px) {
-            min-width: 100%;
-            max-width: 100%;
-        }
-
-
-
-        &::before {
-            content: url('../images/icons/showron-up.png');
-            border-radius: 50%;
-            position: absolute;
-            left: 8px;
-            top: 10px;
-            width: 37px;
-            height: 37px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #D2E8DF;
-            font-size: 8px;
-            transition: .3s all;
-            transform: rotate(180deg);
-        }
-
-        &:hover {
-            color: #292353;
-            text-decoration: none;
-            background: rgba(255, 255, 255, 1);
-        }
-
-        &:focus {
-            outline: none;
-            text-decoration: none;
-        }
-
-        h3, h6, h5 {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-top: 0;
-            font-size: 24px !important;
-            font-weight: 500 !important;
-            @media(max-width: 768px) {
-                font-size: 18px !important;
-            }
-        }
+  a[role='button'] {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 10px;
+    border-radius: 40px;
+    display: block;
+    margin-bottom: 10px;
+    min-width: 80%;
+    max-width: 80%;
+    transition: 0.3s all;
+    color: #292353;
+    position: relative;
+    padding-left: 60px;
+    @media (max-width: 768px) {
+      min-width: 100%;
+      max-width: 100%;
     }
 
-    a[aria-expanded=true] {
-        background: rgba(255, 255, 255, 1);
-        color: #292353;
-        text-decoration: none;
-        margin-bottom: 20px;
-        &:focus {
-            outline: none;
-            text-decoration: none;
-        }
-
-        &::before {
-            transform: rotate(0deg);
-        }
+    &::before {
+      content: url('../images/icons/showron-up.png');
+      border-radius: 50%;
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      width: 37px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #d2e8df;
+      font-size: 8px;
+      transition: 0.3s all;
+      transform: rotate(180deg);
     }
 
-    .collapse,
-    .collapsing {
-        background: transparent;
-        padding-left: 60px;
-        width: 80%;
-        @media(max-width: 768px) {
-            padding-left: 30px;
-            width: 95%;
-        }
+    &:hover {
+      color: #292353;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 1);
     }
 
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+
+    h3,
+    h6,
+    h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      font-size: 24px !important;
+      font-weight: 500 !important;
+      @media (max-width: 768px) {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  a[aria-expanded='true'] {
+    background: rgba(255, 255, 255, 1);
+    color: #292353;
+    text-decoration: none;
+    margin-bottom: 20px;
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+
+    &::before {
+      transform: rotate(0deg);
+    }
+  }
+
+  .collapse,
+  .collapsing {
+    background: transparent;
+    padding-left: 60px;
+    width: 80%;
+    @media (max-width: 768px) {
+      padding-left: 30px;
+      width: 95%;
+    }
+  }
 }
 
 .list {
-    a[aria-expanded=true] {
-        margin-bottom: 0;
+  a[aria-expanded='true'] {
+    margin-bottom: 0;
+  }
+}
+
+// press content
+.press__links {
+  a {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 10px;
+    border-radius: 40px;
+    display: block;
+    margin-bottom: 10px;
+    min-width: 80%;
+    max-width: 80%;
+    transition: 0.3s all;
+    color: #292353;
+    position: relative;
+    padding-left: 60px;
+    @media (max-width: 768px) {
+      min-width: 100%;
+      max-width: 100%;
     }
+
+    &::before {
+      content: url('../images/icons/showron-up.png');
+      border-radius: 50%;
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      width: 37px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #d2e8df;
+      font-size: 8px;
+      transition: 0.3s all;
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      color: #292353;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 1);
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+
+    h3,
+    h6,
+    h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      font-size: 24px !important;
+      font-weight: 500 !important;
+      @media (max-width: 768px) {
+        font-size: 18px !important;
+      }
+    }
+  }
 }

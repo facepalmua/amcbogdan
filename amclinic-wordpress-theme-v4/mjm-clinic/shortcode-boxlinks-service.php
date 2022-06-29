@@ -3,7 +3,7 @@
 
 		<a class="post-image" href="<?php echo  get_permalink($post->ID) ?>">
 			<?php if($image): ?>
-				<img src="<?php echo  $image_url ?>" alt="Image: <?php echo $post->post_title ?>">
+				<img src="<?php echo  get_the_post_thumbnail_url($post->ID, 'large') ?>" alt="Image: <?php echo $post->post_title ?>">
 			<?php endif; ?>
 		</a>
 
