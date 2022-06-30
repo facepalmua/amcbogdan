@@ -856,45 +856,55 @@ h6 {
     }
   }
 }
-.entry-content {
-  .owl-item {
-    height: 0;
-    transition: 0.3s all;
-  }
-  .owl-item.active {
-    height: auto;
-  }
-  .owl-carousel {
-    margin-bottom: 60px;
-  }
-  .owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel .owl-nav button.owl-next,
-  .owl-carousel button.owl-dot {
-    line-height: 1;
-  }
-  .owl-theme .owl-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-    position: absolute;
-    bottom: -60px;
-    width: 100%;
-    z-index: 2;
-  }
-  .owl-theme .owl-dots {
-    position: absolute;
-    bottom: -43px;
-    width: 90%;
-    left: 5%;
-    z-index: 3;
-  }
-}
+// .entry-content {
+//   .owl-item {
+//     height: 0;
+//     transition: 0.3s all;
+//   }
+//   .owl-item.active {
+//     height: auto;
+//   }
+//   .owl-carousel {
+//     margin-bottom: 60px;
+//   }
+//   .owl-carousel .owl-nav button.owl-prev,
+//   .owl-carousel .owl-nav button.owl-next,
+//   .owl-carousel button.owl-dot {
+//     line-height: 1;
+//   }
+//   .owl-theme .owl-nav {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 0;
+//     position: absolute;
+//     bottom: -60px;
+//     width: 100%;
+//     z-index: 2;
+//   }
+//   .owl-theme .owl-dots {
+//     position: absolute;
+//     bottom: -43px;
+//     width: 90%;
+//     left: 5%;
+//     z-index: 3;
+//   }
+// }
 
-.about-us-carousel {
+.site-wide-carousel {
+  width: 90% !important;
+  margin: 0 auto;
+  position: relative;
+  @media(max-width: 540px) {
+    width: 94% !important;
+  }
   .item {
     height: 600px;
     max-width: 950px;
     margin: 0 auto;
+
+    @media(max-width: 540px) {
+        height: 350px;
+    }
 
     img {
       object-fit: contain;
@@ -903,45 +913,27 @@ h6 {
   }
 
   .owl-dots {
+    margin-top: 30px;
     @media (max-width: 768px) {
       bottom: -50px !important;
     }
   }
 
   .owl-nav {
-    position: initial !important;
-
-    .owl-prev, .owl-next {
-      position: absolute;
-      top: 50%;
-
-      @media (max-width: 768px) {
-         top: 96%;
-      }
+    width: 110%;
+    left: -5%;
+    position: absolute;
+    top: calc(50% - 62px);
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 540px) {
+      width: 120%;
+      left: -10%;
     }
+  }
 
-    .owl-prev {
-      @media (max-width: 1250px) {
-        right: inherit;
-        left: -5%;
-      }
-
-      @media (max-width: 768px) {
-        left: 0;
-      }
-    }
-
-    .owl-next {
-      right: 0;
-      @media (max-width: 1250px) {
-        left: inherit;
-        right: -5%;
-      }
-
-      @media (max-width: 920px) {
-        right: 0 !important;
-      }
-    }
+  button.owl-prev, button.owl-next {
+    font-size: 50px !important;
   }
 }
 
@@ -957,6 +949,12 @@ h6 {
     display: block;
     width: 100%;
     height: auto;
+  }
+}
+
+.primary-content {
+  @media(max-width: 540px) {
+      overflow: hidden;
   }
 }
 
@@ -1049,6 +1047,9 @@ h6 {
   }
 
   .entry-content {
+    .site-wide-carousel:first-child {
+      display: none;
+    }
     p:first-child {
       strong {
         font-size: 20px;
@@ -3417,43 +3418,44 @@ section.white-stripe {
     }
   }
 }
+.home {
+  .owl-prev,
+  .owl-next {
+    @media (max-width: 920px) {
+      position: absolute;
+      bottom: -27px !important;
+    }
+  }
 
-.owl-prev,
-.owl-next {
-  @media (max-width: 920px) {
-    position: absolute;
-    bottom: -27px !important;
+  .owl-prev {
+    @media (max-width: 1250px) {
+      position: absolute;
+      right: 130px;
+      bottom: 0;
+    }
+    @media (max-width: 920px) {
+      left: 33%;
+      right: auto;
+      bottom: -23px;
+    }
+    @media (max-width: 425px) {
+      left: 36%;
+    }
   }
-}
 
-.owl-prev {
-  @media (max-width: 1250px) {
-    position: absolute;
-    right: 130px;
-    bottom: 0;
-  }
-  @media (max-width: 920px) {
-    left: 33%;
-    right: auto;
-    bottom: -23px;
-  }
-  @media (max-width: 425px) {
-    left: 36%;
-  }
-}
-
-.owl-next {
-  @media (max-width: 1250px) {
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-  }
-  @media (max-width: 920px) {
-    right: 12% !important;
-    left: auto;
-  }
-  @media (max-width: 425px) {
-    right: 14%;
+  .owl-next {
+    @media (max-width: 1250px) {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+    @media (max-width: 920px) {
+      right: 12% !important;
+      left: auto;
+    }
+    @media (max-width: 425px) {
+      right: 14%;
+    }
   }
 }
 #footer-logo-cmir {
@@ -3503,7 +3505,6 @@ section.white-stripe {
   text-transform: capitalize;
   font-weight: bold;
 }
-
 
 @import '../scss/_build/_components/_faq.scss';
 @import '../scss/_build/rangeslider';
