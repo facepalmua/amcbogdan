@@ -29,6 +29,8 @@ while ( have_posts() ) : the_post();
 						//comments_template();
 					endif;
 					?>
+
+<?php include(locate_template('template-parts/tag-indicators.php')) ?>
 				</div>
 
 				<div class="col-xs-12 col-md-3" id="right-column">

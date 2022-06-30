@@ -39,3 +39,9 @@ function contacts_shortcode($atts, $content=null){ ob_start();
     return ob_get_clean();
 }
 add_shortcode( 'contact_phone', 'contacts_shortcode' );
+
+function learn_more_treatments_shortcode($atts, $content=null){ ob_start();
+    include( locate_template( '/template-parts/learn_more_treatments.php' ) );
+    return ob_get_clean();
+}
+add_shortcode( 'learn_more_treatments', 'learn_more_treatments_shortcode' );

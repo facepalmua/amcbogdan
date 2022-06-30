@@ -859,7 +859,7 @@ h6 {
 .entry-content {
   .owl-item {
     height: 0;
-    transition: .3s all;
+    transition: 0.3s all;
   }
   .owl-item.active {
     height: auto;
@@ -3424,9 +3424,30 @@ section.white-stripe {
 
 .form-col-custom-width {
   .sidebar__additional-info {
-    display: none
+    display: none;
   }
 }
+
+.related-indications__section {
+  margin-top: 70px;
+}
+
+.related-indications__block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.related-indications__link {
+  display: block;
+  padding: 10px 18px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 
 @import '../scss/_build/_components/_faq.scss';
 @import '../scss/_build/rangeslider';
