@@ -164,7 +164,19 @@
 	}
 }
 
-
+.btn-icon {
+	.icon {	
+		.specialist_clinics_icon {
+			height: 26px;
+			padding: 6px;
+			width: 26px;
+			border-radius: 100%;
+			border: 1px solid #bee1d6;
+			stroke: #fff;
+			fill: #fff;
+		}
+	}
+}
 
 .btn,
 .btn-lg {

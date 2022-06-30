@@ -45,3 +45,9 @@ function learn_more_treatments_shortcode($atts, $content=null){ ob_start();
     return ob_get_clean();
 }
 add_shortcode( 'learn_more_treatments', 'learn_more_treatments_shortcode' );
+
+function check_specialist_conditions_shortcode($atts, $content=null){ ob_start();
+    include( locate_template( '/template-parts/check_specialist_conditions.php' ) );
+    return ob_get_clean();
+}
+add_shortcode( 'check_specialist_conditions', 'check_specialist_conditions_shortcode' );
