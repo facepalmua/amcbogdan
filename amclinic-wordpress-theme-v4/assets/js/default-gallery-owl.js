@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   // default wp gallery
-  $('.owl-carousel').owlCarousel({
+  $('.about-us-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,

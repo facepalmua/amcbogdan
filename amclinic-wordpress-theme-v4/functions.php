@@ -150,7 +150,7 @@ function my_post_gallery($output, $attr) {
     if (empty($attachments)) return '';
 
     // Here's your actual output, you may customize it to your needs
-    $output = "<div class=\"owl-carousel owl-theme\">\n";
+    $output = "<div class=\"owl-carousel about-us-carousel owl-theme\">\n";
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {

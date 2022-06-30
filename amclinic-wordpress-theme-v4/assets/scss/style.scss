@@ -889,6 +889,62 @@ h6 {
     z-index: 3;
   }
 }
+
+.about-us-carousel {
+  .item {
+    height: 600px;
+    max-width: 950px;
+    margin: 0 auto;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  .owl-dots {
+    @media (max-width: 768px) {
+      bottom: -50px !important;
+    }
+  }
+
+  .owl-nav {
+    position: initial !important;
+
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 50%;
+
+      @media (max-width: 768px) {
+         top: 96%;
+      }
+    }
+
+    .owl-prev {
+      @media (max-width: 1250px) {
+        right: inherit;
+        left: -5%;
+      }
+
+      @media (max-width: 768px) {
+        left: 0;
+      }
+    }
+
+    .owl-next {
+      right: 0;
+      @media (max-width: 1250px) {
+        left: inherit;
+        right: -5%;
+      }
+
+      @media (max-width: 920px) {
+        right: 0 !important;
+      }
+    }
+  }
+}
+
 //Blog content styles
 .mjm_clinic_widget_container {
   overflow: hidden;
