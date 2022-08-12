@@ -618,7 +618,10 @@
 
 		return deferred;
 	};
-
+	jQuery(document).ready(function() {
+		jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ 	 });
+ 
 // Preserve handler of uncaught exceptions in promise chains
 	jQuery.Deferred.exceptionHook = oldDeferred.exceptionHook;
 

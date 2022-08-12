@@ -296,7 +296,7 @@ $amount = $atts['amount']
 
         <div class="price-content-wrapper">
             <div class="price-content">
-                <div class="price__inner-item">
+                <div class="price__inner-item inner_price_table">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-6">
                             <p class="table__package-title">Package</p>
@@ -304,12 +304,12 @@ $amount = $atts['amount']
                     </div>
                     <div class="prices-table__center-line">
                         <div class="row prices__table-headings-row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <p class="prices__table-title">
                                     TREATMENT TYPE
                                 </p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title">1</p>
                                     <p class="prices__table-title">2</p>
@@ -319,13 +319,13 @@ $amount = $atts['amount']
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Massage - 30 minutes</p>
                                     <p class="__description">(usual price £39)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
                                     <p class="prices__table-title"><span class="table-color-label yellow"></span></p>
@@ -335,13 +335,13 @@ $amount = $atts['amount']
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Head Massage</p>
                                     <p class="__description">(usual price £39)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
                                     <p class="prices__table-title"><span class="table-color-label yellow"></span></p>
@@ -353,13 +353,13 @@ $amount = $atts['amount']
                         </div>
                         <hr class="custom-hr">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Acupuncture</p>
                                     <p class="__description">(usual price £55)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£15</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
@@ -370,13 +370,13 @@ $amount = $atts['amount']
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Massage - 45 minutes</p>
                                     <p class="__description">(usual price £55)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£15</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
@@ -387,13 +387,13 @@ $amount = $atts['amount']
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Foot Massage - 45 minutes</p>
                                     <p class="__description">(usual price £55)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£15</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
@@ -404,13 +404,13 @@ $amount = $atts['amount']
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Cosmetic Acupuncture</p>
                                     <p class="__description">(usual price £65)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£25</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label green"></span></p>
@@ -422,13 +422,13 @@ $amount = $atts['amount']
                         </div>
                         <hr class="custom-hr">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Acupuncture - Musculoskeletal Pain</p>
                                     <p class="__description">(usual price £75)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£35</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label price">£20</span></span></p>
@@ -439,13 +439,13 @@ $amount = $atts['amount']
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Massage - 60 minutes</p>
                                     <p class="__description">(usual price £75)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£35</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label price">£20</span></span></p>
@@ -457,13 +457,13 @@ $amount = $atts['amount']
                         </div>
                         <hr class="custom-hr">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Fertility Clinic with Acupuncture</p>
                                     <p class="__description">(usual price £85)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£45</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label price">£30</span></span></p>
@@ -474,13 +474,13 @@ $amount = $atts['amount']
 
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__left-content">
                                     <p class="__title">Massage - 90 minutes</p>
                                     <p class="__description">(usual price £90)</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="prices__grid-labels">
                                     <p class="prices__table-title"><span class="table-color-label price">£50</span></span></p>
                                     <p class="prices__table-title"><span class="table-color-label price">£35</span></span></p>
@@ -489,6 +489,93 @@ $amount = $atts['amount']
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                    <div id="table-scroll" class="table-scroll">
+                        <div class="table-wrap">
+                            <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <th class="fixed-side prices__table-title">TREATMENT TYPE</th>
+                                    <th class="prices__table-title">1</th>
+                                    <th class="prices__table-title">2</th>
+                                    <th class="prices__table-title">3</th>
+                                    <th class="prices__table-title">4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th class="fixed-side __title">Massage - 30 minutes <br> <p class="__description">(usual price £39)</p></th>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Head Massage <br> <p class="__description">(usual price £39)</p></th>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Acupuncture<br> <p class="__description">(usual price £55)</p></th>
+                                <td><span class="table-color-label price">£15</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Massage - 45 minutes<br> <p class="__description">(usual price £55)</p></th>
+                                <td><span class="table-color-label price">£15</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Foot Massage - 45 minutes<br> <p class="__description">(usual price £55)</p></th>
+                                <td><span class="table-color-label price">£15</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Cosmetic Acupuncture<br> <p class="__description">(usual price £65)</p></th>
+                                <td><span class="table-color-label price">£25</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Acupuncture - Musculoskeletal <br> Pain<br> <p class="__description">(usual price £75)</p></th>
+                                <td><span class="table-color-label price">£35</span></td>
+                                <td><span class="table-color-label price">£25</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Massage - 60 minutes <br> <p class="__description">(usual price £75)</p></th>
+                                <td><span class="table-color-label price">£35</span></td>
+                                <td><span class="table-color-label price">£25</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                <td><span class="table-color-label yellow"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Fertility Clinic with Acupuncture<br> <p class="__description">(usual price £85)</p></th>
+                                <td><span class="table-color-label price">£45</span></td>
+                                <td><span class="table-color-label price">£30</span></td>
+                                <td><span class="table-color-label price">£10</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                </tr>
+                                <tr>
+                                <th class="fixed-side __title">Massage - 90 minutes<br> <p class="__description">(usual price £90)</p></th>
+                                <td><span class="table-color-label price">£50</span></td>
+                                <td><span class="table-color-label price">£35</span></td>
+                                <td><span class="table-color-label price">£15</span></td>
+                                <td><span class="table-color-label green"></span></td>
+                                </tr>
+                            </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

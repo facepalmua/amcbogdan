@@ -114,7 +114,7 @@
 					</fieldset>
 					<div class="col">
 						<div class="form-group">
-							<label>Please let us know your enquiry:</label>
+							<label>Please let us know your enquiry or give us feedback:</label>
 							<textarea class="form-control" name="am-message" cols="70" rows="5" wrap="physical"></textarea>
 						</div>
 						<div class="">

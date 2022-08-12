@@ -210,9 +210,13 @@
     &.active {
         display: block;
         background: #FAF1EA;
-        padding: 10px;
+        padding: 20px;
         margin-top: 15px;
         border-radius: 6px;
+
+        hr {
+            border-color: #b9b1aa;
+        }
     }
 
     ul,

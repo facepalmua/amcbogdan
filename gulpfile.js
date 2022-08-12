@@ -41,6 +41,7 @@ gulp.task('styles', function () {
     .pipe(browserSync.stream());
 });
 
+
 // HTML Live Reload
 gulp.task('code', function () {
   return gulp.src('amclinic-wordpress-theme-v4/*.php').pipe(browserSync.reload({ stream: true }));

@@ -834,7 +834,7 @@ h6 {
     right: 10.4%;
     bottom: -6%;
     display: flex;
-    gap: 29px;
+    gap: 25px;
     @media (max-width: 1492px) {
       right: 9.7% !important;
       bottom: -8% !important;
@@ -856,39 +856,6 @@ h6 {
     }
   }
 }
-// .entry-content {
-//   .owl-item {
-//     height: 0;
-//     transition: 0.3s all;
-//   }
-//   .owl-item.active {
-//     height: auto;
-//   }
-//   .owl-carousel {
-//     margin-bottom: 60px;
-//   }
-//   .owl-carousel .owl-nav button.owl-prev,
-//   .owl-carousel .owl-nav button.owl-next,
-//   .owl-carousel button.owl-dot {
-//     line-height: 1;
-//   }
-//   .owl-theme .owl-nav {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 0;
-//     position: absolute;
-//     bottom: -60px;
-//     width: 100%;
-//     z-index: 2;
-//   }
-//   .owl-theme .owl-dots {
-//     position: absolute;
-//     bottom: -43px;
-//     width: 90%;
-//     left: 5%;
-//     z-index: 3;
-//   }
-// }
 
 .site-wide-carousel {
   width: 90% !important;
@@ -1915,6 +1882,12 @@ blockquote {
   }
 }
 
+.entry-content {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 body blockquote cite {
   display: flex;
   align-items: center;
@@ -1993,6 +1966,73 @@ blockquote cite {
   dl {
     font-size: 18px;
     font-weight: 300;
+  }
+
+  .article-title {
+    background: rgba(255,255,255,.5);
+    padding: 15px 10px;
+    border-radius: 40px;
+    display: block;
+    margin-bottom: 10px;
+    max-width: 97%;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    color: #292353;
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      color: #292353;
+      text-decoration: none;
+      background: #fff;
+    }
+
+    &:before {
+      content: url(../images/icons/link_icon.svg);
+      border-radius: 50%;
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      width: 37px;
+      text-align: center;
+      line-height: 50px;
+      height: 37px;
+      background: #d2e8df;
+      font-size: 8px;
+      transition: .3s all;
+    }
+
+    .post-more {
+      font-size: 30px;
+      line-height: 0;
+      color: #abd3c1;
+      min-width: 35px;
+      height: 35px;
+      border: 2px solid #abd3c1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #abd3c1;
+        border-bottom: 2px solid #abd3c1;
+        display: block;
+        transform: rotate(-45deg);
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .description-article {
+    padding-left: 60px;
   }
 }
 
