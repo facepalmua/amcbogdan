@@ -28,7 +28,7 @@
 .sidebar-title {
     color: #292353;
     margin-top: 0;
-    text-align: center;
+    line-height: 37px;
 }
 
 .btns-container {
@@ -154,7 +154,7 @@
     }
 
     a {
-        border: 0.5px solid black !important;
+        border: .5px solid #dcdce3 !important;
         border-radius: 5px;
         margin-bottom: 10px;
         padding: 8px !important;
@@ -168,7 +168,7 @@
             color: #fafafb !important;
             text-decoration: none;
             &::before {
-                border-right: 1px solid #dadae3;
+                border-right: 1px solid #dcdce3;
             }
         }
 
@@ -181,7 +181,7 @@
             background-position: center center;
             display: block;
             padding-right: 8px;
-            border-right: 1px solid black;
+            border-right: 1px solid #dcdce3;
             margin-right: 8px;
             margin-left: -5px;
         }

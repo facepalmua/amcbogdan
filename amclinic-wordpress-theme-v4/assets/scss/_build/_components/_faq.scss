@@ -111,7 +111,7 @@
     }
 
     &::before {
-      content: url('../images/icons/showron-up.png');
+      content: url('../images/icons/link_icon.svg');
       border-radius: 50%;
       position: absolute;
       left: 8px;
@@ -124,7 +124,6 @@
       background: #d2e8df;
       font-size: 8px;
       transition: 0.3s all;
-      transform: rotate(90deg);
     }
 
     &:hover {
@@ -150,5 +149,10 @@
         font-size: 18px !important;
       }
     }
+  }
+
+  p {
+    padding-left: 63px;
+    margin-bottom: 30px;
   }
 }
