@@ -16,7 +16,7 @@
 			</h3>
 
 			<p>
-				<?php echo mb_strimwidth($category_meta['excerpt'], 0, 100, '...')?>
+				<?php echo mb_strimwidth ($category_meta['excerpt'], 0 , 100, '...')?>
 			</p>
 			<div class="post-more">
 				<a href="<?php echo get_term_link($category) ?>"><span></span></a>

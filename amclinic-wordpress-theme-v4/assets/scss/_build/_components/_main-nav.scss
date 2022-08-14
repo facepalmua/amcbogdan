@@ -13,3 +13,39 @@
           }
       }
   }
+
+  .term_id-372 {
+    pointer-events: none;
+    margin-top: 30px !important;
+
+    &::after {
+      content: "";
+      width: 85%;
+      left: 10%;
+      height: 1px;
+      position: absolute;
+      top: 78.2%;
+      display: block;
+      background: #94a1ab;
+    }
+}
+
+.term_id-21 {
+  margin-top: 30px !important;
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    width: 85%;
+    left: 10%;
+    height: 1px;
+    position: absolute;
+    top: 62.6%;
+    display: block;
+    background: #94a1ab;
+  }
+}
+
+.term_id-22 {
+  pointer-events: none !important;
+}

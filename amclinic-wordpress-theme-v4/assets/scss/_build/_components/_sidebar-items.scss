@@ -28,7 +28,9 @@
 .sidebar-title {
     color: #292353;
     margin-top: 0;
-    line-height: 37px;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 33px;
 }
 
 .btns-container {
@@ -168,7 +170,7 @@
             color: #fafafb !important;
             text-decoration: none;
             &::before {
-                border-right: 1px solid #dcdce3;
+                border-right: 1px solid #dadae3;
             }
         }
 
@@ -181,7 +183,7 @@
             background-position: center center;
             display: block;
             padding-right: 8px;
-            border-right: 1px solid #dcdce3;
+            border-right: .5px solid #dcdce3;
             margin-right: 8px;
             margin-left: -5px;
         }

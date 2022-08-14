@@ -64,7 +64,7 @@ get_header(); ?>
 													<?php echo  esc_html(ucwords(strtolower($post->post_title))) ?>
 												</a>
 											</h3>
-											<p><?php echo $excerpt?></p>
+											<p><?php  echo $excerpt?></p>
 											<div class="post-more">
 												<a href="<?php echo get_permalink($post->ID) ?>"><span></span></a>
 											</div>

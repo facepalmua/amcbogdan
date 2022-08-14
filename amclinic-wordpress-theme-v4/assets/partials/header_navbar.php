@@ -85,7 +85,7 @@ function amclinic4_output_nav_service($service)
 											if (is_array($cat->children) && count($cat->children)) {
 												foreach ($cat->children as $cat_child) {
 											?>
-													<li class="treatment-list__heading">
+													<li class="treatment-list__heading <?php echo 'term_id-' . $cat_child -> term_id ?>">
 														<a href="/our-services/<?php echo  $cat_child->slug ?>" title="<?php echo  esc_html($cat_child->name) ?>">
 															<?php echo  esc_html($cat_child->name) ?>
 														</a>

@@ -655,6 +655,7 @@ h6 {
   &.remove-bg-offset {
     background-position: 0 0;
     background-size: cover;
+    background-position: 0px 180%;
   }
 }
 
@@ -1380,7 +1381,7 @@ h6 {
     position: relative;
 
     p {
-      font-size: 18px;
+      font-size: 19px;
     }
 
     h3 {
@@ -1424,12 +1425,6 @@ h6 {
         margin-left: -3px;
       }
     }
-  }
-}
-
-.term-17 {
-  .feature-posts:nth-child(2) {
-    display: none;
   }
 }
 
@@ -2467,13 +2462,7 @@ body {
   }
 }
 
-.treatment-list__service:last-child {
-  font-size: 30px;
-}
-
 .treatment-list__heading {
-  margin-top: 0 !important;
-
   a {
     color: #282451 !important;
     text-transform: uppercase !important;
@@ -3554,6 +3543,28 @@ section.white-stripe {
   border-radius: 5px;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+.term-17 {
+  .feature-posts:nth-child(2) {
+    display: none
+  }
+}
+
+.map-wrapp {
+  display: none;
+}
+
+.location-info:hover ~ .map-wrapp { display: block;}
+
+.map-wrapp:hover {
+  display: block;
+}
+
+.page-id-155 {
+  .footer-button {
+    display: none;
+  }
 }
 
 @import '../scss/_build/_components/_faq.scss';
