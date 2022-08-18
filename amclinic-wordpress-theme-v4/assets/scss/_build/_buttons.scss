@@ -183,6 +183,13 @@
 		.text {
 			font-weight: 300 !important;
 		}
+		.btn-icon {
+			&:hover {
+				.icon {
+					background: #e9541f;
+				}
+			}
+		}
 	}
 }
 

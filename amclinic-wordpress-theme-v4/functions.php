@@ -1,7 +1,8 @@
 <?php
+
 /****************************************
 Theme Setup
-*****************************************/
+ *****************************************/
 
 /**
  * Theme initialization
@@ -79,32 +80,34 @@ require get_template_directory() . '/lib/inc/customizer.php';
 
 /****************************************
 Require Plugins
-*****************************************/
+ *****************************************/
 
 require get_template_directory() . '/lib/class-tgm-plugin-activation.php';
 require get_template_directory() . '/lib/theme-require-plugins.php';
 
-add_action( 'tgmpa_register', 'am_register_required_plugins' );
+add_action('tgmpa_register', 'am_register_required_plugins');
 
 
 /****************************************
 Misc Theme Functions
-*****************************************/
+ *****************************************/
 
 /**
  * Define custom post type capabilities for use with Members
  */
-add_action( 'admin_init', 'am_add_post_type_caps' );
-function am_add_post_type_caps() {
-	// am_add_capabilities( 'portfolio' );
+add_action('admin_init', 'am_add_post_type_caps');
+function am_add_post_type_caps()
+{
+    // am_add_capabilities( 'portfolio' );
 }
 
 /**
  * Filter Yoast SEO Metabox Priority
  */
-add_filter( 'wpseo_metabox_prio', 'am_filter_yoast_seo_metabox' );
-function am_filter_yoast_seo_metabox() {
-	return 'low';
+add_filter('wpseo_metabox_prio', 'am_filter_yoast_seo_metabox');
+function am_filter_yoast_seo_metabox()
+{
+    return 'low';
 }
 
 
@@ -112,7 +115,8 @@ function am_filter_yoast_seo_metabox() {
  * Changed gallery output
  */
 add_filter('post_gallery', 'my_post_gallery', 10, 2);
-function my_post_gallery($output, $attr) {
+function my_post_gallery($output, $attr)
+{
     global $post;
 
     if (isset($attr['orderby'])) {
@@ -148,15 +152,16 @@ function my_post_gallery($output, $attr) {
     }
 
     if (empty($attachments)) return '';
-
+    $output = '<div class="sitewide_carousel__wrapper">';
+    $output .= '<span class="custom-owl-nav custom-prev"><img src="'.get_stylesheet_directory_uri().'/assets/images/icons/left_arrow.svg" alt=""></span>';
     // Here's your actual output, you may customize it to your needs
-    $output = "<div class=\"owl-carousel site-wide-carousel owl-theme\">\n";
+    $output .= "<div class=\"owl-carousel site-wide-carousel owl-theme\">\n";
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
         // Fetch the thumbnail (or full image, it's up to you)
-//      $img = wp_get_attachment_image_src($id, 'medium');
-//      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
+        //      $img = wp_get_attachment_image_src($id, 'medium');
+        //      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
         $img = wp_get_attachment_image_src($id, 'full');
 
         $output .= "<div class=\"item\">\n";
@@ -164,6 +169,8 @@ function my_post_gallery($output, $attr) {
         $output .= "</div>\n";
     }
 
+    $output .= "</div>\n";
+    $output .= '<span class="custom-owl-nav custom-next"><img src="'.get_stylesheet_directory_uri().'/assets/images/icons/right_arrow.svg" alt=""></span>';
     $output .= "</div>\n";
 
     return $output;

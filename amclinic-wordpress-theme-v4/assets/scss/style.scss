@@ -858,20 +858,24 @@ h6 {
   }
 }
 
-.site-wide-carousel {
+.sitewide_carousel__wrapper {
   width: 90% !important;
   margin: 0 auto;
   position: relative;
-  @media(max-width: 540px) {
+  @media (max-width: 540px) {
     width: 94% !important;
+  }
+
+  .owl-nav.disabled {
+    display: none;
   }
   .item {
     height: 600px;
     max-width: 950px;
     margin: 0 auto;
 
-    @media(max-width: 540px) {
-        height: 350px;
+    @media (max-width: 540px) {
+      height: 350px;
     }
 
     img {
@@ -887,20 +891,24 @@ h6 {
     }
   }
 
-  .owl-nav {
-    width: 110%;
-    left: -5%;
+  .custom-prev {
+    width: 40px;
+    left: -7%;
     position: absolute;
     top: calc(50% - 62px);
-    display: flex;
-    justify-content: space-between;
-    @media(max-width: 540px) {
-      width: 120%;
-      left: -10%;
-    }
+    cursor: pointer;
   }
 
-  button.owl-prev, button.owl-next {
+  .custom-next {
+    width: 40px;
+    right: -7%;
+    position: absolute;
+    top: calc(50% - 62px);
+    cursor: pointer;
+  }
+
+  button.owl-prev,
+  button.owl-next {
     font-size: 50px !important;
   }
 }
@@ -921,8 +929,8 @@ h6 {
 }
 
 .primary-content {
-  @media(max-width: 540px) {
-      overflow: hidden;
+  @media (max-width: 540px) {
+    overflow: hidden;
   }
 }
 
@@ -1014,8 +1022,14 @@ h6 {
     }
   }
 
+  .single-mjm-clinic-service {
+    .sitewide_carousel__wrapper {
+      display: none !important;
+    }
+  }
+
   .entry-content {
-    .site-wide-carousel:first-child {
+    .sitewide_carousel__wrapper {
       display: none;
     }
     p:first-child {
@@ -1970,15 +1984,15 @@ blockquote cite {
   }
 
   .article-title {
-    background: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 15px 10px;
     border-radius: 40px;
     display: block;
     margin-bottom: 10px;
     max-width: 97%;
-    -webkit-transition: .3s all;
-    -o-transition: .3s all;
-    transition: .3s all;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
     color: #292353;
     font-weight: 400;
     font-size: 25px;
@@ -2006,7 +2020,7 @@ blockquote cite {
       height: 37px;
       background: #d2e8df;
       font-size: 8px;
-      transition: .3s all;
+      transition: 0.3s all;
     }
 
     .post-more {
@@ -3547,7 +3561,7 @@ section.white-stripe {
 
 .term-17 {
   .feature-posts:nth-child(2) {
-    display: none
+    display: none;
   }
 }
 
@@ -3555,7 +3569,9 @@ section.white-stripe {
   display: none;
 }
 
-.location-info:hover ~ .map-wrapp { display: block;}
+.location-info:hover ~ .map-wrapp {
+  display: block;
+}
 
 .map-wrapp:hover {
   display: block;

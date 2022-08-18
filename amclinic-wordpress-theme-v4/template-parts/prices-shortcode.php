@@ -6,80 +6,42 @@ $atts = shortcode_atts(
     $atts,
     'prices'
 );
-$amount = $atts['amount']
-
+$amount = $atts['amount'];
+$chinese_medicine_group = get_field('chinese_medicine_group');
 ?>
 
+<?php if (!empty($chinese_medicine_group)) { ?>
 <div class="prices__wrapper">
     <div class="price__item">
-        <p class="price-title blue">CHINESE MEDICINE</p>
+        <p class="price-title blue"><?php echo $chinese_medicine_group['main_title'] ?></p>
 
-        <div class="price-content-wrapper">
+        <?php foreach ($chinese_medicine_group['services'] as $service) { ?>
+            <div class="price-content-wrapper">
             <div class="price-content">
                 <div class="price__inner-item">
-                    <p class="inner__title">ACUPUNCTURE + CONSULTATION</p>
+                    <?php if ($service['title']) { ?>
+                    <p class="inner__title"><?php echo $service['title'] ?></p>
+                    <?php } ?>
+                    <?php if ($service['description']) { ?>
                     <div class="inner__content_wrapper">
-                        <p>Full consultation, including pulse and tongue diagnosis, will be followed by
-                            Acupuncture and an optional plant-based prescription. Appointments
-                            usually between 40-80 minutes.</p>
+                        <?php echo $service['description'] ?>
                     </div>
+                    <?php } ?>
                     <ul class="inner__prices__list">
-                        <li>first vist <span>£65</span></li>
-                        <li>for a subsequent visit <span>£55</span></li>
+                        <?php if ($service['price_description_1'] || $service['price_1']) { ?>
+                        <li><?php echo $service['price_description_1'] ?: "" ?> <span><?php echo $service['price_1'] ?: "" ?></span></li>
+                        <?php } ?>
+                        <?php if ($service['price_description_2'] || $service['price_2'] ) { ?>
+                        <li><?php echo $service['price_description_2'] ?: "" ?> <span><?php echo $service['price_2'] ?: "" ?></span></li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <div class="price-content-wrapper">
-            <div class="price-content">
-                <div class="price__inner-item">
-                    <p class="inner__title">CONSULTATION</p>
-                    <div class="inner__content_wrapper">
-                        <p>Full consultation, including pulse and tongue diagnosis. Optional
-                            plant-based prescription for purchase. Appointments usually last between
-                            20-40 minutes.</p>
-                    </div>
-                    <ul class="inner__prices__list">
-                        <li><span class="wo-padding">£35</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="price-content-wrapper">
-            <div class="price-content">
-                <div class="price__inner-item">
-                    <p class="inner__title">ACUPUNCTURE - MUSCULOSKELETAL PAIN</p>
-                    <div class="inner__content_wrapper">
-                        <p>A highly-effective, multi-modality approach to musculoskeletal pain and
-                            injury. Expert acupuncture with cupping, manipulation, advanced Pi/Fu
-                            techniques in one session. Between 40-80 mins.</p>
-                    </div>
-                    <ul class="inner__prices__list">
-                        <li><span class="wo-padding">£75</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="price-content-wrapper">
-            <div class="price-content">
-                <div class="price__inner-item">
-                    <p class="inner__title">SPECIALIST FERTILITY CLINIC</p>
-                    <div class="inner__content_wrapper">
-                        <p>Specialised fertility treatment by world-renowned experts in the field.
-                            Includes Acupuncture and a written plant-based prescription for purchase.</p>
-                    </div>
-                    <ul class="inner__prices__list">
-                        <li>fertility clinic with acupuncture<span>£85</span></li>
-                        <li>consultation only <span>£65</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <?php } ?>
     </div>
 </div>
+<?php } ?>
 
 <div class="prices__wrapper">
     <div class="price__item">

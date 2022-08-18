@@ -107,6 +107,7 @@ var amclinic = {
 	},
 	carousel_add_parralax: function(){
 		(function($) {
+			console.log('parallax')
 			//DO PARRALAX effect
 			var $window = $(window)
 			var $document = $(document)
@@ -359,7 +360,7 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-
+	amclinic.carousel_add_parralax();
 
 	//quick newsletter sign ups
 	$("form.subscribe_ajax_json").submit(function(){
